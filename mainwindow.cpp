@@ -13,3 +13,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::image(const QString &arg1){
+    ui->label->setPixmap(":/images/" + arg1 + ".png");
+}
